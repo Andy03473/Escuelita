@@ -3,6 +3,15 @@
 <head>
     <title>Editar Alumno</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Verde bandera con letras blancas */
+        .btn-ver, .btn-actualizar {
+            background-color: #006400 !important; /* Verde bandera */
+            color: white !important;
+            border: none;
+        }
+
+    </style>
 </head>
 <body>
     <div class="container mt-4">
@@ -38,7 +47,7 @@
                     <span class="text-danger">{{ $message }}</span>
                 @enderror
             </div>
-            <button type="submit" class="btn btn-success">Actualizar</button>
+            <button type="submit" class="btn btn-actualizar">Actualizar</button>
             <a href="{{ route('alumnos.index') }}" class="btn btn-secondary">Cancelar</a>
         </form>
     </div>
